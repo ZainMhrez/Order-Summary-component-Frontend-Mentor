@@ -1,0 +1,108 @@
+/* Start Global Rules */
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: "Red Hat Display";
+    background: url(../images/pattern-background-desktop.svg) no-repeat center/cover;
+    background-color: hsl(225, 100%, 94%);
+}
+/* End Global Rules */
+
+/* Start Styling */
+.container {
+    width: 415px;
+    margin: 65px auto;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 2em 1em #d6e1ff;
+}
+@media (max-width: 375px) {
+    .container {width: 350px;}
+}
+.container img {
+    border-radius: 12px 12px 0 0;
+}
+.container .card {
+    display: flex;
+    flex-direction: column;
+    padding: 35px 30px;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 0 0 12px 12px;
+}
+.container .card h2 {
+    margin-bottom: 20px;
+    color: hsl(223, 47%, 23%);
+}
+.container .card p {
+    font-size: 16px;
+    color: hsl(224, 23%, 55%);
+    margin-bottom: 20px;
+    text-align: center;
+}
+@media (max-width: 375px) {
+    .container .card p {font-size: 17px;}
+}
+.container .card .row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+    background-color: hsl(225, 100%, 98%);
+    padding: 17px 7px;
+    border-radius: 12px;
+}
+.container .card .row img {
+    margin-left: 15px;
+}
+.container .card .row .plan {
+    margin-right: 70px;
+    text-align: left;
+}
+.container .card .row .plan strong {color: hsl(223, 47%, 23%);}
+.container .card .row .plan span {
+    color: hsl(224, 23%, 55%);
+    font-size: 16px;
+}
+.container .card .row a {
+    margin-right: 15px;
+    color: hsl(245, 75%, 52%);
+}
+.container .card .row a:hover {
+    text-decoration: none;
+    color: hsl(223, 47%, 23%)
+}
+@media (max-width: 375px) {
+    .container .card .row {padding: 13px 2px;}
+    .container .card .row .plan {margin-right: 15px;}
+    .container .card .row a {font-size: 14px;}
+}
+.container .card button {
+    padding: 15px;
+    background-color: hsl(245, 75%, 52%);
+    color: #fff;
+    border: none;
+    margin-bottom: 25px;
+    font-size: 16px;
+    font-weight: 700;
+    border-radius: 12px;
+    cursor: pointer;
+    box-shadow: 0 1em 0.9em hsl(225deg 100% 94%);
+}
+.container .card button:hover {
+    background-color: hsla(245, 75%, 52%, 0.75);
+}
+.container .card > a {
+    text-decoration: none;
+    color: hsl(224, 23%, 55%);
+    font-weight: 700;
+}
+.container .card > a:hover {
+    color: hsl(223, 47%, 23%);
+}
+/* End Styling */
